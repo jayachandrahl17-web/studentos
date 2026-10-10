@@ -38,6 +38,27 @@ python manage.py runserver
 
 Django uses SQLite when `DB_NAME` is empty. PostgreSQL can be enabled through `.env`.
 
+## Production Deployment
+
+The Django project lives in `backend-2/` and uses `config.wsgi:application`. The React app lives in `frontend/` and uses Vite.
+
+### Render backend
+
+1. Connect this GitHub repository to Render and create a Blueprint from `render.yaml`.
+2. Review the selected Render plans and pricing. The Blueprint provisions a PostgreSQL database and a Starter web service.
+3. Set `CORS_ALLOWED_ORIGINS` and `CSRF_TRUSTED_ORIGINS` on the Render service to the exact production Vercel origin, for example `https://studentos.vercel.app` (no trailing slash).
+4. Keep the generated `SECRET_KEY`, `DEBUG=false`, and the Blueprint-provided `DATABASE_URL`. Render sets `RENDER_EXTERNAL_HOSTNAME`, which Django adds to `ALLOWED_HOSTS`.
+5. Render installs `backend-2/requirements.txt`, collects static files with `backend-2/build.sh`, runs migrations before deploy, and starts `config.wsgi:application` with Gunicorn.
+
+### Vercel frontend
+
+1. Import the same repository into Vercel and set the project Root Directory to `frontend`.
+2. Use the Vite framework preset, build command `npm run build`, and output directory `dist` (also specified in `frontend/vercel.json`).
+3. Add `VITE_API_BASE_URL=https://<your-render-service>.onrender.com` as a Vercel environment variable for Production, then redeploy.
+4. Copy the final Vercel production origin into both Render origin variables above. Because authentication uses Django sessions and CSRF cookies across Render/Vercel origins, production defaults to secure cookies with `SameSite=None` and credentialed CORS.
+
+The API URL is public configuration, not a secret. Never add the Django secret, database URL, or AI provider key to Vercel. Keep those only in Render environment settings. `frontend/.env.example` and `backend-2/.env.example` contain placeholders for local setup.
+
 ## OpenAI (optional but recommended)
 
 Keep the API key on Django, never in React:
@@ -90,7 +111,7 @@ The deterministic planner remains responsible for hard constraints and academic 
 
 ### Enable OpenAI
 
-Copy `backend/.env.example` to `backend/.env` and set:
+Copy `backend-2/.env.example` to `backend-2/.env` and set:
 
 ```text
 OPENAI_API_KEY=your_api_key_here

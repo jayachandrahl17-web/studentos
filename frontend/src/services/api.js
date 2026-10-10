@@ -1,5 +1,9 @@
 const localApiHost = window.location.hostname === "localhost" ? "localhost" : "127.0.0.1";
-const API_URL = (import.meta.env.VITE_API_URL || `http://${localApiHost}:8000`).replace(/\/$/, "");
+const API_URL = (
+  import.meta.env.VITE_API_BASE_URL ||
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.DEV ? `http://${localApiHost}:8000` : "")
+).replace(/\/$/, "");
 
 async function responseError(response) {
   let message = `Request failed (${response.status}).`;

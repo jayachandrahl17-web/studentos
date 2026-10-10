@@ -1,4 +1,5 @@
 from django.contrib.auth import get_user_model
+from django.core.management import call_command
 from django.test import TestCase
 from rest_framework.test import APIClient
 
@@ -173,3 +174,15 @@ class UserDataIsolationTests(TestCase):
         }
         self.assertNotIn(self.topic.pk, first_topic_ids)
         self.assertIn(self.topic.pk, second_topic_ids)
+
+    def test_syllabus_import_preserves_existing_user_records(self):
+        call_command('import_syllabus', verbosity=0)
+        syllabus_topic = Topic.objects.exclude(pk=self.topic.pk).first()
+        self.assertIsNotNone(syllabus_topic)
+        progress = TopicProgress.objects.create(user=self.first_user, topic=syllabus_topic, completed=True)
+        session = StudySession.objects.create(user=self.first_user, topic=syllabus_topic, minutes=25)
+
+        call_command('import_syllabus', verbosity=0)
+
+        self.assertTrue(TopicProgress.objects.filter(pk=progress.pk, completed=True).exists())
+        self.assertTrue(StudySession.objects.filter(pk=session.pk, user=self.first_user).exists())
