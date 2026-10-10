@@ -1,0 +1,644 @@
+{
+  "schema_version": 1,
+  "source_scheme": "GAT 2024 scheme & syllabus / 2024-25 ISE scheme",
+  "semester": 3,
+  "academic_year": "2026-27",
+  "subjects": [
+    {
+      "code": "BMATS24301",
+      "name": "Discrete Mathematics",
+      "credits": 3,
+      "color": "violet",
+      "modules": [
+        {
+          "number": 1,
+          "name": "Sets, Counting and Probability",
+          "hours": 8,
+          "topics": [
+            "Sets and Subsets",
+            "Set Operations and the Laws of Set Theory",
+            "Counting and Venn Diagrams",
+            "Probability",
+            "Axioms of Probability",
+            "Conditional Probability",
+            "Bayes Theorem"
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Fundamentals of Logic",
+          "hours": 8,
+          "topics": [
+            "Basic Connectives and Truth Tables",
+            "Logical Equivalence",
+            "The Laws of Logic",
+            "Logical Implication",
+            "Rules of Inference",
+            "Quantifiers",
+            "Definitions",
+            "Proofs of Theorems"
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Counting Principles and Induction",
+          "hours": 8,
+          "topics": [
+            "Fundamental Principles of Counting",
+            "Rules of Sum and Product",
+            "Permutations",
+            "Combinations",
+            "Binomial Theorem",
+            "Combinations with Repetition",
+            "Well Ordering Principle",
+            "Mathematical Induction",
+            "Recursive Definitions"
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Relations",
+          "hours": 8,
+          "topics": [
+            "Cartesian Products and Relations",
+            "Properties of Relations",
+            "Zero-One Matrices",
+            "Directed Graphs",
+            "Partial Orders",
+            "Hasse Diagrams",
+            "Equivalence Relations",
+            "Partitions"
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Functions and Recurrence",
+          "hours": 8,
+          "topics": [
+            "Plain and One-to-One Functions",
+            "Onto Functions",
+            "Function Composition",
+            "Inverse Functions",
+            "Generating Functions",
+            "First-Order Recurrence Relation"
+          ]
+        }
+      ],
+      "source": "GAT 2024 Scheme & Syllabus PDF, pp. 1-2"
+    },
+    {
+      "code": "BIS24302",
+      "name": "Operating System (Integrated)",
+      "credits": 4,
+      "color": "indigo",
+      "modules": [
+        {
+          "number": 1,
+          "name": "Introduction to Operating Systems and System Structures",
+          "hours": 10,
+          "topics": [
+            "What Operating Systems Do",
+            "Computer System Organization",
+            "Computer System Architecture",
+            "Operating System Structure",
+            "Operating System Operations",
+            "Process Management",
+            "Memory Management",
+            "Storage Management",
+            "Protection and Security",
+            "Distributed Systems",
+            "Special-Purpose Systems",
+            "Computing Environments",
+            "Operating System Services",
+            "User-Operating System Interface",
+            "System Calls",
+            "Types of System Calls",
+            "System Programs",
+            "Operating System Design and Implementation",
+            "Virtual Machines",
+            "Operating System Debugging",
+            "Operating System Generation",
+            "System Boot"
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Process Management and Scheduling",
+          "hours": 10,
+          "topics": [
+            "Process Concept",
+            "Process Scheduling",
+            "Operations on Processes",
+            "Interprocess Communication",
+            "Multithreaded Programming",
+            "Multithreading Models",
+            "Thread Libraries",
+            "Threading Issues",
+            "Process Scheduling Basic Concepts",
+            "Scheduling Criteria",
+            "Scheduling Algorithms",
+            "Thread Scheduling",
+            "Multiple-Processor Scheduling"
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Process Synchronization and Deadlocks",
+          "hours": 10,
+          "topics": [
+            "The Critical-Section Problem",
+            "Peterson's Solution",
+            "Synchronization Hardware",
+            "Semaphores",
+            "Classical Problems of Synchronization",
+            "Deadlock System Model",
+            "Deadlock Characterization",
+            "Methods for Handling Deadlocks",
+            "Deadlock Prevention",
+            "Deadlock Avoidance",
+            "Deadlock Detection",
+            "Recovery from Deadlock"
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Memory Management and Virtual Memory",
+          "hours": 10,
+          "topics": [
+            "Memory Management Strategies",
+            "Background",
+            "Swapping",
+            "Contiguous Memory Allocation",
+            "Paging",
+            "Structure of Page Table",
+            "Segmentation",
+            "Virtual Memory Management",
+            "Demand Paging",
+            "Copy-on-Write",
+            "Page Replacement",
+            "Allocation of Frames",
+            "Thrashing"
+          ]
+        },
+        {
+          "number": 5,
+          "name": "File Systems, Secondary Storage and Protection",
+          "hours": 10,
+          "topics": [
+            "File Concept",
+            "Access Methods",
+            "Directory and Disk Structure",
+            "File System Mounting",
+            "File Sharing",
+            "File System Structure",
+            "File System Implementation",
+            "Directory Implementation",
+            "Allocation Methods",
+            "Free Space Management",
+            "Mass Storage Structures",
+            "Disk Structure",
+            "Disk Attachment",
+            "Disk Scheduling",
+            "Disk Management",
+            "Goals of Protection",
+            "Principles of Protection",
+            "Domain of Protection",
+            "Access Matrix"
+          ]
+        }
+      ],
+      "source": "GAT 2024 Scheme & Syllabus PDF, pp. 5-6"
+    },
+    {
+      "code": "BIS24303",
+      "name": "Digital Logic Design and Computer Organization (Integrated)",
+      "credits": 4,
+      "color": "amber",
+      "modules": [
+        {
+          "number": 1,
+          "name": "Combinational Logic Circuits",
+          "hours": 10,
+          "topics": [
+            "Boolean Functions",
+            "Two-Variable Maps",
+            "Three-Variable Maps",
+            "Four-Variable Maps",
+            "Map Manipulation",
+            "Product-of-Sums Optimization",
+            "Sum-of-Products Optimization",
+            "Don't Care Conditions",
+            "Tabulation Method",
+            "Determination of Prime Implicants"
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Data Processing Circuits and Flip-Flops",
+          "hours": 10,
+          "topics": [
+            "Adders",
+            "Subtractors",
+            "Code Converters",
+            "Magnitude Comparators",
+            "Multiplexers",
+            "Demultiplexers",
+            "Encoders",
+            "Decoders",
+            "Introduction to Flip-Flops",
+            "Types of Flip-Flops",
+            "Representations of Flip-Flops",
+            "JK Master-Slave Flip-Flop"
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Machine Instructions and Input/Output Organization",
+          "hours": 10,
+          "topics": [
+            "Memory Locations and Addresses",
+            "Memory Operations",
+            "Instructions and Instruction Sequencing",
+            "Addressing Modes",
+            "Assembly Language",
+            "Basic Input and Output Operations",
+            "Accessing I/O Devices",
+            "Interrupts",
+            "Interrupt Hardware",
+            "Enabling and Disabling Interrupts"
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Basic Processing Unit and Memory System",
+          "hours": 10,
+          "topics": [
+            "Fundamental Concepts of the Processing Unit",
+            "Instruction Execution",
+            "Hardwired Control",
+            "Hardware Components",
+            "Basic Memory Concepts",
+            "Semiconductor RAM Memories",
+            "Read Only Memories",
+            "Memory Speed",
+            "Cache Memories",
+            "Cache Mapping Functions",
+            "Cache Replacement Algorithms",
+            "Cache Performance Considerations"
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Arithmetic",
+          "hours": 10,
+          "topics": [
+            "Addition of Signed Numbers",
+            "Subtraction of Signed Numbers",
+            "Design of Fast Adders",
+            "Multiplication of Positive Numbers",
+            "Signed Operand Multiplication",
+            "Floating-Point Numbers",
+            "Floating-Point Operations"
+          ]
+        }
+      ],
+      "source": "GAT 2024 Scheme & Syllabus PDF, pp. 10-11"
+    },
+    {
+      "code": "BIS24304",
+      "name": "Data Structures and Application",
+      "credits": 3,
+      "color": "cyan",
+      "modules": [
+        {
+          "number": 1,
+          "name": "Introduction, Stacks and Recursion",
+          "hours": 8,
+          "topics": [
+            "Introduction to Data Structures",
+            "Review of Arrays",
+            "Types of Data Structures",
+            "Linear Data Structures",
+            "Non-Linear Data Structures",
+            "Stack Definitions and Concepts",
+            "Representing Stacks in C",
+            "Stack Operations",
+            "Infix to Postfix",
+            "Infix to Prefix",
+            "Postfix Expression Evaluation",
+            "Recursion"
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Queues, Dynamic Memory and Linked Lists",
+          "hours": 8,
+          "topics": [
+            "Queue Representation",
+            "Queue Operations",
+            "Circular Queues",
+            "Applications of Queues",
+            "Priority Queues",
+            "Dynamic Memory Allocation",
+            "malloc()",
+            "calloc()",
+            "free()",
+            "realloc()",
+            "Linked List Definition and Terminology",
+            "Singly Linked Lists",
+            "Singly Linked List Insertion",
+            "Singly Linked List Deletion",
+            "Singly Linked List Display",
+            "Polynomial Applications"
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Circular/Doubly Linked Lists and Trees",
+          "hours": 8,
+          "topics": [
+            "Circular Singly Linked Lists",
+            "Circular Linked List Operations",
+            "Circular Linked List Applications",
+            "Doubly Linked Lists",
+            "Doubly Linked List Operations",
+            "Sparse Matrix Applications",
+            "Tree Definition and Terminology",
+            "Binary Trees",
+            "Binary Search Trees",
+            "BST Insertion",
+            "BST Deletion",
+            "Tree Traversals: Preorder",
+            "Tree Traversals: Postorder",
+            "Tree Traversals: Inorder"
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Expression Trees, Threaded Trees and Heaps",
+          "hours": 8,
+          "topics": [
+            "Expression Trees",
+            "Construction of Expression Trees",
+            "Threaded Binary Trees",
+            "Types of Threaded Binary Trees",
+            "Applications of Threaded Binary Trees",
+            "Heap Definition",
+            "Heap Construction",
+            "Heap Applications",
+            "Priority Queue"
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Balanced Trees, Graphs and Hashing",
+          "hours": 8,
+          "topics": [
+            "AVL Trees",
+            "B Trees",
+            "B+ Trees",
+            "Splay Trees",
+            "Graph Introduction",
+            "Matrix Representation of Graphs",
+            "List Representation of Graphs",
+            "Open Hashing",
+            "Closed Hashing",
+            "Hash Collisions",
+            "Collision Resolution Strategies"
+          ]
+        }
+      ],
+      "source": "GAT 2024 Scheme & Syllabus PDF, pp. 15-16"
+    },
+    {
+      "code": "BIS24306A",
+      "name": "Object Oriented Programming with JAVA",
+      "credits": 3,
+      "color": "rose",
+      "modules": [
+        {
+          "number": 1,
+          "name": "Introduction to Java, Classes and Objects",
+          "hours": 8,
+          "topics": [
+            "Java Features",
+            "Bytecode",
+            "Java Development Kit (JDK)",
+            "Java Buzzwords",
+            "Object-Oriented Programming",
+            "Simple Java Programs",
+            "Data Types",
+            "Variables",
+            "Operators",
+            "Control Statements",
+            "Classes Fundamentals",
+            "Declaring Objects",
+            "Constructors",
+            "this Keyword",
+            "static Keyword",
+            "Compile-Time Polymorphism"
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Inheritance and Exception Handling",
+          "hours": 8,
+          "topics": [
+            "Inheritance Basics",
+            "super Keyword",
+            "Run-Time Polymorphism",
+            "final Keyword",
+            "abstract Keyword",
+            "Exception Handling Fundamentals",
+            "Exception Types",
+            "Uncaught Exceptions",
+            "Exception Handlers",
+            "Java Built-in Exceptions",
+            "User-Defined Exception Subclasses",
+            "Chained Exceptions"
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Arrays and Strings",
+          "hours": 8,
+          "topics": [
+            "Array Introduction",
+            "Array Declaration and Initialization",
+            "Alternative Array Declaration Syntax",
+            "One-Dimensional Arrays",
+            "Multi-Dimensional Arrays",
+            "Array of Objects",
+            "String Constructors",
+            "String Length",
+            "Special String Operations",
+            "String Literals",
+            "String Concatenation",
+            "String Concatenation with Other Data Types",
+            "String Conversion with toString()",
+            "Character Extraction",
+            "String Comparison",
+            "Searching Strings",
+            "Modifying Strings",
+            "Data Conversion with valueOf()",
+            "Changing Character Case",
+            "StringBuffer",
+            "StringBuffer Constructors",
+            "length() and capacity()",
+            "ensureCapacity()",
+            "setLength()",
+            "setCharAt()",
+            "getChars()",
+            "append()",
+            "insert()",
+            "reverse()",
+            "delete()",
+            "deleteCharAt()",
+            "replace()"
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Packages, Interfaces and Multithreading",
+          "hours": 8,
+          "topics": [
+            "Packages",
+            "Access Protection",
+            "Importing Packages",
+            "Interfaces",
+            "Threads",
+            "Ways of Creating a Thread",
+            "Main Thread",
+            "Thread States",
+            "Synchronization",
+            "isAlive()",
+            "join()",
+            "Thread Priority",
+            "Inter-Thread Communication",
+            "Producer-Consumer Problem"
+          ]
+        },
+        {
+          "number": 5,
+          "name": "AWT and Event Handling",
+          "hours": 8,
+          "topics": [
+            "Abstract Window Toolkit (AWT) Basics",
+            "Creating Frames",
+            "Buttons",
+            "Labels",
+            "TextFields",
+            "Layouts",
+            "Built-in AWT Functions",
+            "Event Handling Mechanisms",
+            "Delegation Event Model",
+            "Event Classes",
+            "Event Sources",
+            "Event Listener Interfaces",
+            "Adapter Classes",
+            "Keyboard Events",
+            "Mouse Events"
+          ]
+        }
+      ],
+      "source": "GAT 2024 Scheme & Syllabus PDF, pp. 96-98"
+    },
+    {
+      "code": "BSCK24307",
+      "name": "Social Connect and Responsibility",
+      "credits": 1,
+      "color": "emerald",
+      "modules": [
+        {
+          "number": 1,
+          "name": "Plantation and Adoption of a Tree",
+          "hours": 3,
+          "topics": [
+            "Tree Plantation",
+            "Tree Adoption for Four Years",
+            "Plant Origin and Usage",
+            "Plant Appearance in Folklore and Literature",
+            "Objectives",
+            "Visit",
+            "Case Study",
+            "Report",
+            "Outcomes"
+          ]
+        },
+        {
+          "number": 2,
+          "name": "Heritage Walk and Crafts Corner",
+          "hours": 3,
+          "topics": [
+            "Heritage Tour",
+            "History and Culture of the City",
+            "Connecting with People Through History",
+            "City Crafts and Craftsmen",
+            "Photo Blog",
+            "Documentary on Craft Evolution and Practice",
+            "Objectives",
+            "Visit",
+            "Case Study",
+            "Report",
+            "Outcomes"
+          ]
+        },
+        {
+          "number": 3,
+          "name": "Organic Farming and Waste Management",
+          "hours": 3,
+          "topics": [
+            "Usefulness of Organic Farming",
+            "Wet Waste Management in Neighboring Villages",
+            "Campus Implementation",
+            "Objectives",
+            "Visit",
+            "Case Study",
+            "Report",
+            "Outcomes"
+          ]
+        },
+        {
+          "number": 4,
+          "name": "Water Conservation",
+          "hours": 3,
+          "topics": [
+            "Current Water Practices in Surrounding Villages",
+            "Campus Water-Conservation Implementation",
+            "Documentary or Photo Blog",
+            "Objectives",
+            "Visit",
+            "Case Study",
+            "Report",
+            "Outcomes"
+          ]
+        },
+        {
+          "number": 5,
+          "name": "Food Walk",
+          "hours": 3,
+          "topics": [
+            "City Culinary Practices",
+            "Food Lore",
+            "Indigenous Materials Used in Cooking",
+            "Objectives",
+            "Visit",
+            "Case Study",
+            "Report",
+            "Outcomes"
+          ]
+        }
+      ],
+      "source": "GAT 2024 Scheme & Syllabus PDF, pp. 39-40"
+    },
+    {
+      "code": "BAS24358D",
+      "name": "Data Visualization with Python",
+      "credits": 1,
+      "color": "orange",
+      "modules": [],
+      "source": "GAT 2024-25 ISE Scheme confirms the course code/title, but the detailed module PDF was not located in GAT's indexed official documents during this import.",
+      "status": "pending_official_detail"
+    }
+  ]
+}
